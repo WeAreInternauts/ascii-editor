@@ -7,7 +7,6 @@ import LayersPanel from "@/components/LayersPanel";
 import TopBar from "@/components/TopBar";
 import StatusBar from "@/components/StatusBar";
 import TextInput from "@/components/TextInput";
-import { PerplexityAttribution } from "@/components/PerplexityAttribution";
 import type { Tool } from "@/lib/ascii-engine";
 
 export default function Editor() {
@@ -149,10 +148,6 @@ export default function Editor() {
         activeTool={editor.activeTool}
       />
 
-      {/* Attribution */}
-      <div className="absolute bottom-7 left-3 z-50">
-        <PerplexityAttribution />
-      </div>
     </div>
   );
 }
